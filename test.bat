@@ -1,4 +1,6 @@
-python.exe main.py <Sort Me.text> output1.txt
-fc output1.txt Sort Me.txt
+python main.py <SortMe.txt> output1.txt
+fc output1.txt sortedFileNormal.txt 
+
 
 pause;
+	
