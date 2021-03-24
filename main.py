@@ -1,10 +1,15 @@
 # creating the file with the names in it
+
 names = list()
-file = open('Sort Me.txt')
+file = open('SortMe.txt')
 
 #looping through the array of words to append
 for name in file:
-    names.append(name)
+    #remove whitespace
+    name = name.strip()
+    words = name.split()
+    for word in words:
+        names.append(name)
 file.close()
 
 #first sort the results by character
