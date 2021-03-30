@@ -22,13 +22,3 @@ for name in names:
     print(name)
 
 
-# print("_____________ Reverse It")
-# print("")
-#
-# #code for reversing
-#
-# names.sort(reverse=True)
-# names.sort(key=len, reverse=True)
-#
-# for name in names:
-#     print(name)
