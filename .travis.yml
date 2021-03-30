@@ -1,8 +1,9 @@
 language: python
 
 
-install: pip install docker-compose
+install:
+  -pip install pipenv
+  -pipenv install
 
 script:
-  -cd SimpleSort
-  -test.bat
+  - ./test.bat
