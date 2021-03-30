@@ -1,10 +1,8 @@
 language: python
 
-services:
-  -docker
 
-before_script: pip install docker-compose
+install: pip install docker-compose
 
 script:
-  -docker-compose run app sh -c "SortMe.txt | python main.py > output1.txt"
-  -docker-compose run app sh -c "SortMe.txt | python ReverseSort.py > output2.txt"
+  -cd SimpleSort
+  -test.bat
